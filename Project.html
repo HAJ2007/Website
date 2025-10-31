@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel = "stylesheet" href ="style.css">
+
+    </head>
+    <body>
+        <header class= "header">
+            <h1>PROJECTS</h1>
+            <button class = "menu" id="menubtn">☰</button>
+        
+            <nav class = "nav" id="navBtn">
+                <a href="Webpage.html">About</a>
+                <a href="Project.html">Projects</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+            <script src="interactive.js"></script>
+        </header>
+        <div class="layout2">
+            <div class="generic">
+                <h2>HANG-MAN</h2>
+                <div class="insideLink">
+                    <a href="https://github.com/HAJ2007/HangmanGame.git">Github link HangmanGame</a>
+                </div>
+                <p>
+                    This is a digital version of a childhood game.<br> The game requires the player to guess all the letters of a word when only the length is given.<br>
+                    The player get aroud 5-7 chances to make an incorrect guess depending on how the "hang man" is drawn.<br> For my game I gave the user 5 turns to guess the incorrect letters<br>
+                    If the player made a wrong guess after the 5th chance for wrong guesses are given the user will loose.<br><br>
+                    <strong>CORE FEATURES:</strong><br>
+                    <ul>
+                        <li>
+                            Validation: All inputs are checked against a preset criteria to prevent the user inputs causing an erro<br>
+                            This is especially because the user inputs otherwise can be unpredictable.
+                        </li>
+                        <br>
+                        <li>
+                            GUI: A simple interface is implemeted using Tkinder library. This makes the application user friendly.<br>
+                        </li>
+                        <br>
+                        <li>
+                            Multiple windows: Rather than containing all the processing in one window I have used specific windows for specific tasks<br>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;Start Window:Contains The title of the Game and the start button to begin the game<br>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;Gameplay window:Additional to the features that displays the game functions <br>
+                            &nbsp;&nbsp;&nbsp;there is also a Menu button which has a pop up section.<br>
+                            &nbsp;&nbsp;&nbsp;This popup displays buttons to go back to the start(HOME button) and 'REPLAY' button.<br> 
+                            &nbsp;&nbsp;&nbsp;This improves accessibility.<br>
+                            &nbsp;&nbsp;&nbsp;When a game is won or lost the guess button and Enty smace is blocked to prevent userinputs<br>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;EndScreen: When the game is lost or won a button to end game appears on 'gameplay'window.<br>
+                            &nbsp;&nbsp;&nbsp;This button allows to end the game and go to the next window containing the buttons in menu<br>
+                            &nbsp;&nbsp;&nbsp;When improving the current version, this window promises easy integration of new features<br>
+                            &nbsp;&nbsp;&nbsp;such as score.
+                        </li>
+                        <br>
+                        <li>
+                            Hang- Man: Different sections of hangman is added based on the number of wrong guesses.<br>
+                            The drawing pervorms similar fuction to that of a life metre peresent is ames ususally.<br>
+                            This helps the user keep trach of the chances the user have left.
+                        </li>
+                        <br>
+                        <div class = "images">
+                            <img src="images/start.png" height="250px" width="330px">
+                            <img src="images/info.png" height="250px" width="330px">
+                            <img src="images/gameplayW.png" height="250px" width="330px">
+                            <img src="images/validation.png" height="250px" width="330px">
+                            <img src="images/Win.png" height="250px" width="330px">
+                            <img src="images/loss.png" height="250px" width="330px">
+                            <img src="images/endscreen.png" height="250px" width="330px">
+                            
+                        </div>                       
+                    </ul>
+                </p>
+            </div>
+            <div class="generic">
+                <h2>ENCODE and DECODE</h2> 
+                <div class="insideLink">
+                <a href="https://github.com/HAJ2007/Encode_Decode_GUI.git">Github link Encode & Decode</a>
+                </div>
+                <p>
+                    The program consists of a simple encoder and decoded based of Caesar cipher<br>
+                    The user is able to chose between Encoding and Decoding and input.<br>
+                    The decoding uses brute force attack where all the 25 possible shifts are shown to the user.<br>
+                    <strong>CORE FEATURES:</strong><br>
+                    <ul>
+                        <li>
+                            Encoding: The user can input a string that is greater 1 to 45 characters in legth(including spaces).<br>
+                            The user can then either selct to randomly generate a shif or input a shift number to encode the input<br>
+                            The shift number need to be less than 25 and greater than 0. There are instruction for guiding the user<br>
+                            If the random variable is not clicked and a shift is not entered the progtam will show 2 pop ups showing error.The user simply eed to click ok to get result
+                        </li>
+                        <br>
+                        <li>
+                            Decoding: Because all the inputs have to be shown due to the brute force nature of the program<br>
+                            The character length for input is between 1 and 45.<br>
+                            Instruction to guede the user are given. After clicking ok all outputs are given<br>
+                        </li>
+                        <br>
+                        <li>
+                            Menu-Button: There is a menu button on both encode and decode windoes allowing to return only to home.
+                            The menu button is toggled using a variable that stores a value when the menu button function is called.
+                            The pop up is opened nd colsed based on this variabel.
+                        </li>
+                        <br>
+                        <li>
+                            GUI: The simple interface using tkinder allows the user to see the the result within a clean layout<br>
+                            The colour scheme is composed of bright blue and orange which is cmplemetary colours providing vibrant layout.
+                            The encoding and decoding have a mixture of colours.
+                        </li>
+                        <br>
+                        <li>
+                            Case and Punctuation: All the pintution is ingnored when shifting so output will retain the Punctuation<br>
+                            The shift is sesitive to case so if the input is in upeer case the shift will be in upper case for both decode and encode
+                        </li>
+                        <br>
+                        <li>
+                            Validation: The validation is same for encode and decode in terms of input character. Other validation regarding shift and ranomisation is specific to encoding
+                        </li>
+                        <br>
+                        <div class = "images">
+                            <img src="images/Main.png" height="250px" width="330px">
+                            <img src="images/encode.png" height="250px" width="330px">
+                            <img src="images/exE.png" height="250px" width="330px">
+                            <img src="images/decode.png" height="250px" width="330px">
+                            <img src="images/exD.png" height="250px" width="330px">
+                            <img src="images/valid1.png" height="250px" width="330px">
+                            <img src="images/valid2.png" height="250px" width="330px">
+                            <img src="images/valid3.png" height="250px" width="330px">
+                            
+                        </div> 
+                    </ul>
+                </p>
+            </div>
+            <div class="generic">
+                <h2>SIMPLE CALCULATOR</h2> 
+                <div class="insideLink">
+                <a href="https://github.com/HAJ2007/Calculater_UI.git">Github link Calculator</a>
+                </div>
+                <p>
+                    The program is a simple calculator that can do arithmetic operations like addition subtraction division and multiplicatiom.
+                    Thought the calculation containing more than one operation cannot be performed due to BODMAS not being implementd the calculater is good of repeted operations.
+                <br>
+                <strong>CORE FEATURES:</strong><br>
+                    <ul>
+                        <li>
+                        Clear Button: accessibility feature that clears the entry box if the user want to erace input
+                        </li>
+                        <br>
+                        <li>
+                            Backspace: accessibilityfeature used when the user only want to erase the last item inputted. 
+                            This button additinal to clear button allows for a more user firendly approach.
+                        </li>
+                        <br>
+                        <li>
+                            GUI: The interface implemented usin tiginder is simple with clear colour cordinated section to appear as intentional and clean.
+                        </li>
+                        <br>
+                        <img src="images/calc.png" height="340px" width="230px">
+                    </ul>
+                </p> 
+
+            </div>
+            <div class="generic">
+                <h2>DEDUCTION</h2>
+                <div class="insideLink">
+                    <a href="https://github.com/HAJ2007/Deduction_Python_Game.git">Github link Deduction</a> 
+                </div>
+                <p>
+                    This is a simple command-line game that works my conditional statemtments, random librabry and list data type. 
+                    The game asks the player to guess a for digit number that is randomly selectod. Hints are given to the user to help deduce the number.
+                    These hints depend on the individual input. There is no clear lose criteria but to win you have to guess all numbers correctly.
+                    <br>
+                    <strong>CORE FEATURES:</strong><br>
+                    <ul>
+                    <li>
+                        Clues: The clues are givem based on input then randomly shuffled to increase the difficulty.
+                        <br>
+                            &nbsp;&nbsp;&nbsp;HOT: this means one of the guessed numbers is correct and in the right place
+                        <br>
+                            &nbsp;&nbsp;&nbsp;WARM: this means one of the guessed numbers is correct but in the wrong place
+                        <br>
+                            &nbsp;&nbsp;&nbsp;COLD: The number is incorrect
+                        <br>
+                    Because the clues are shuffled the input position is not matched to clues. This is done especially because the initial generation of the clue is based on position of the digint
+
+                    </li>
+                    <br>
+                    <li>
+                        Validation: The inputs are checked against 2 criteria. Are all inputa consinsisting of only numbers, are all inputs 4 digits long.
+                    </li>
+                    </ul>
+                    
+
+                </p> 
+            </div>
+        </div>
+        
+        
+    </body>
+</html>
